@@ -1,8 +1,15 @@
+import { useNavigate } from 'react-router-dom';
 import { UserOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import LoginForm from '../components/shared/LoginForm';
 
 function Login() {
+	const navigate = useNavigate();
+
+	const onClick = () => {
+		navigate('/register');
+	}
+
 	return (
 		<div className='login-wrapper'>
 			<div className='login-heading'>
@@ -17,7 +24,7 @@ function Login() {
 					Don't have an account with us? <br />
 					<Button
 						block={true}
-						href='/register'>
+						onClick={onClick}>
 						Register
 					</Button>
 				</div>
