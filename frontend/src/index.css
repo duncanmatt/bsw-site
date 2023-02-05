@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+	margin: 0;
+	line-height: 1.5;
+	font-family: 'Open Sans', sans-serif;
+	height: 100vh;
+	background-color: #f7f7f2;
+}
+
+h2 {
+	padding-inline: 45px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	background: none;
+	border: none;
+}
+
+.header-wrapper {
+	background-image: linear-gradient(#fff 30%, #f7f7f2);
+	padding-inline: 3vw;
+}
+
+.header-content {
+	display: grid;
+	grid-template-columns: 0.25fr 0.5fr 0.25fr;
+	height: 80px;
+	columns: 3;
+	align-items: center;
+}
+
+.header-title-wrapper {
+	flex: 1;
+}
+
+.header-title {
+	text-align: center;
+	margin: 0;
+	font-weight: 600;
+}
+
+@media (max-width: 800px) {
+	.header-title-wrapper {
+		font-size: smaller;
+	}
+}
+
+.header-menu-wraper {
+	flex: 1;
+	font-weight: 800;
+	height: max-content;
+}
+
+.header-navigation-wrapper {
+	flex-basis: 100%;
+	display: flex;
+	gap: 1rem;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 1.1rem;
+}
+
+.register {
+	padding-inline: 3vw;
+}
+
+.register-form {
+	max-inline-size: 1000px;
+}
+
+.menu-content {
+	background-color: rgb(255, 255, 255);
+	padding-inline: 3vw;
+	min-height: 100vh;
+}
+
+.menu-upper-wrapper {
+	display: grid;
+	grid-template-columns: 0.75fr 0.25fr;
+	padding-block: 0.5rem;
+	font-size: 1.75rem;
+}
+
+.menu-upper-wrapper .anticon {
+	text-align: right;
+}
+
+.menu-lower-wrapper {
+	padding-block: 1rem;
+}
+
+.menu-links {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	font-weight: 500;
+}
+
+.menu-link {
+	display: grid;
+	grid-template-columns: 0.75fr 0.25fr;
+}
+
+.menu-link > .anticon {
+	text-align: right;
+}
+
+.form-control {
+	margin-block: 0.835rem;
+}
+
+.form-control > button {
+	/* background-color: #f7f7f2; */
+}
+
+.login-wrapper {
+	display: block;
+	padding-inline: 3vw;
+	height: 100vh;
+}
+
+.login-heading > h2 {
+	padding-inline: 0;
+}
+
+.login-content {
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: 1fr;
+}
+
+@media (min-width: 800px) {
+	.login-content {
+		grid-template-columns: 0.5fr 0.5fr;
+		grid-auto-flow: column;
+		gap: 5rem;
+	}
+	.register-prompt {
+		margin-top: -2rem;
+		padding-inline: 2rem;
+	}
+}
+
+.register-prompt {
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+}
+
+.register-prompt > a {
+	margin-top: 1rem;
+}
+
+.cart {
+	height: 100vh;
+	padding-inline: 3vw;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.cart-temp-text {
+	padding-top: 2rem;
+}
+
+.tshirts-wrapper {
+	display: block;
+	padding: 1rem;
+	padding-inline: 3vw;
+	background-color: #f7f7f2;
+}
+
+.sweatshirts-wrapper {
+	display: block;
+	padding: 1rem;
+	padding-inline: 3vw;
+	background-color: #f7f7f2;
+}
+
+.jackets-wrapper {
+	display: block;
+	padding: 1rem;
+	padding-inline: 3vw;
+	background-color: #f7f7f2;
+}
+
+.products-wrapper {
+	display: flex;
+	padding-block: 24px;
+	height: min-content;
+}
+
+.products-content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: stretch;
+	gap: 20px;
+	flex: 1;
+}
+
+.home-heading {
+	padding-block: 2rem;
+	line-height: 1.6;
+	font-size: 1.25rem;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	background-color: #f7f7f2;
+}
+
+@media (min-width: 1000px) {
+	.home-content {
+		background-color: #f7f7f2;
+	}
+}
+
+.slick-active .desktop-product-gallery {
+	display: flex;
+	justify-content: center;
+	filter: drop-shadow(-2px -2px 2px rgba(51, 51, 51, 0.1))
+		drop-shadow(2px 2px 2px rgba(51, 51, 51, 0.1));
+}
+
+.home-categories {
+	background-color: #f7f7f2;
+	padding-block-start: 3rem;
+	padding-block-end: 1rem;
+}
+
+.category-wrapper {
+	cursor: pointer;
+}
+
+.categories-wrapper-mobile {
+	padding-inline: 3vw;
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: 1fr;
+	gap: 2em;
+}
+
+.categories-wrapper-desktop {
+	padding-inline: 3vw;
+	padding-block: 3rem;
+}
+
+.newsletter-wrapper {
+	padding-inline: 3vw;
+	margin-top: 7rem;
+	padding-block: 1rem;
+	border-top: 1px dotted rgba(51, 51, 51, 1);
+	border-bottom: 1px dotted rgba(51, 51, 51, 1);
+	background-color: #f2f3f4;
+}
+
+.newsletter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.newsletter > h3 {
+	letter-spacing: 1.3px;
+	font-weight: 700;
+}
+
+.newsletter > p {
+	margin: 0;
+	letter-spacing: 0.3px;
+}
+
+.newsletter-form {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex: 1;
+	padding-block: 1rem;
+}
