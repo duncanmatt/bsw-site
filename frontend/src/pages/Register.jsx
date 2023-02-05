@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import { UserAddOutlined } from '@ant-design/icons';
 import { Input, Button, Spin } from 'antd';
 import { useSelector, useDispatch } from 'react-redux';
-import { register, reset } from '../features/auth/authSlice';
+import { register } from '../features/auth/authSlice';
 
 function Register() {
 	const [formData, setFormData] = useState({
