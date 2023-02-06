@@ -1,5 +1,4 @@
 import ProductDisplay from '../components/shared/ProductDisplay';
-import Footer from '../components/Footer';
 
 function TShirts() {
 	const shirtItems = [
@@ -35,7 +34,6 @@ function TShirts() {
 				<h2>T-Shirts</h2>
 				<ProductDisplay items={shirtItems} />
 			</div>
-			<Footer />
 		</div>
 	);
 }
