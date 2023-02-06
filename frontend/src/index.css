@@ -67,7 +67,6 @@ button {
 	gap: 1rem;
 	flex-direction: row;
 	justify-content: flex-end;
-	align-items: center;
 	font-size: 1.1rem;
 }
 
@@ -232,9 +231,17 @@ button {
 }
 
 .home-categories {
-	background-color: #f7f7f2;
-	padding-block-start: 3rem;
-	padding-block-end: 1rem;
+	background-color: #f2f3f4;
+	margin-top: 4rem;
+	padding-inline: 4vw;
+	padding-block-start: 1rem;
+	padding-block-end: 6rem;
+}
+
+.categories-header {
+	margin-block: 1rem 2rem;
+	letter-spacing: 0.22rem;
+	padding: 0;
 }
 
 .category-wrapper {
@@ -242,16 +249,13 @@ button {
 }
 
 .categories-wrapper-mobile {
-	padding-inline: 3vw;
 	display: grid;
 	grid-auto-flow: row;
 	grid-template-columns: 1fr;
-	gap: 2em;
+	gap: 3rem;
 }
 
 .categories-wrapper-desktop {
-	padding-inline: 3vw;
-	padding-block: 3rem;
 }
 
 .newsletter-wrapper {
@@ -285,4 +289,13 @@ button {
 	justify-content: center;
 	flex: 1;
 	padding-block: 1rem;
+	gap: 1rem;
+}
+
+.newsletter-form > input {
+	background-color: #fff;
+}
+
+.newsletter-form > button {
+	background-color: #fff;
 }

@@ -50,7 +50,7 @@ function HomeCategories() {
 			<div className='categories-wrapper-mobile'>
 				{categories.map(category => (
 					<CategoryCard
-						height='94vw'
+						height='92vw'
 						key={category.id}
 						category={category}
 					/>
@@ -65,7 +65,7 @@ function HomeCategories() {
 
 		return (
 			<div className={'categories-wrapper-desktop'}>
-				<Row gutter={[16, { xs: 8, sm: 16, md: 24, lg: 32 }]}>
+				<Row gutter={[16, 16]}>
 					<Col span={width < breakpoint ? 12 : 8}>
 						<CategoryCard
 							height={width < breakpoint ? '44vw' : '33vw'}
@@ -103,6 +103,7 @@ function HomeCategories() {
 	return (
 		<ViewportProvider>
 			<section className='home-categories'>
+				<h2 className='categories-header'>Outerwear</h2>
 				<DisplayCategories />
 			</section>
 		</ViewportProvider>

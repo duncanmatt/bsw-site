@@ -25,15 +25,15 @@ function CategoryCard({ category, height }) {
 					className='btn'
 					onClick={() => navigate(`/${category.title}`.toLowerCase())}
 					style={{
-						color: '#f7f7f2',
+						color: '#fff',
 						height: 'fit-content',
 						margin: '1rem 1rem 0 0',
 						paddingBlock: '1rem',
 						paddingInline: '1.25rem',
-						backgroundColor: '#2f2f1d',
+						backgroundColor: '#000',
 						borderRadius: '25% 5rem',
 						lineHeight: '1',
-						filter: 'drop-shadow(0 0 1rem rgba(51, 51, 51, .4))'
+						filter: 'drop-shadow(0 0 1rem rgba(51, 51, 51, .2))'
 					}}>
 					{`${category.title}`.toUpperCase()}
 				</div>
