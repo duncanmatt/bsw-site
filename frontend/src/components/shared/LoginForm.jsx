@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { login, reset } from '../../features/auth/authSlice';
-import { Form, Button, Input } from 'antd';
+import { Spin, Button, Input } from 'antd';
 
 function LoginForm() {
 	const [formData, setFormData] = useState({
@@ -50,6 +50,10 @@ function LoginForm() {
 
 		dispatch(login(userData));
 	};
+
+	if (isLoading) {
+		return <Spin />
+	}
 
 	return (
 		<div className='login-form-wrapper'>

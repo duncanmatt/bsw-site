@@ -79,7 +79,7 @@ function Header() {
 					<MenuOutlined
 						className='menu-icon-wrapper'
 						style={{
-							fontSize: '1.4rem',
+							fontSize: '1.1rem',
 							justifySelf: 'left',
 							maxWidth: 'fit-content',
 						}}

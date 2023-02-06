@@ -50,7 +50,7 @@ function HomeCategories() {
 			<div className='categories-wrapper-mobile'>
 				{categories.map(category => (
 					<CategoryCard
-						height='92vw'
+						height='94vw'
 						key={category.id}
 						category={category}
 					/>

@@ -34,7 +34,6 @@ button {
 .header-content {
 	display: grid;
 	grid-template-columns: 0.25fr 0.5fr 0.25fr;
-	height: 80px;
 	columns: 3;
 	align-items: center;
 }
@@ -117,10 +116,6 @@ button {
 
 .form-control {
 	margin-block: 0.835rem;
-}
-
-.form-control > button {
-	/* background-color: #f7f7f2; */
 }
 
 .login-wrapper {
@@ -231,11 +226,10 @@ button {
 }
 
 .home-categories {
-	background-color: #f2f3f4;
-	margin-top: 4rem;
-	padding-inline: 4vw;
+	margin-top: 1rem;
+	padding-inline: 3vw;
 	padding-block-start: 1rem;
-	padding-block-end: 6rem;
+	padding-block-end: 3rem;
 }
 
 .categories-header {
@@ -253,9 +247,6 @@ button {
 	grid-auto-flow: row;
 	grid-template-columns: 1fr;
 	gap: 3rem;
-}
-
-.categories-wrapper-desktop {
 }
 
 .newsletter-wrapper {
