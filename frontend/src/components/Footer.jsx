@@ -7,7 +7,7 @@ function Footer() {
 			style={{
 				lineHeight: '18px',
 				fontSize: '12px',
-				paddingBlock: '1rem',
+				paddingBlock: '.25rem',
 				display: 'flex',
 				flex: '1',
 				alignItems: 'end',
